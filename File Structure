@@ -1,0 +1,7 @@
+/starlight-auto/
+  index.html
+  styles.css
+  scripts.js
+  /images/
+    car-hero-bg.jpg  ← your hero background
+    … (your portfolio photos e.g. car1.jpg, car2.jpg, etc.)
