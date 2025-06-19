@@ -1,0 +1,119 @@
+/* Base Styles */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  color: #eee;
+  background: #000;
+  scroll-behavior: smooth;
+}
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(15,15,15,0.9);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  z-index: 1000;
+}
+.logo {
+  font-weight: 700;
+  font-size: 1.4rem;
+  letter-spacing: 1px;
+}
+nav a {
+  color: #eee;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: 500;
+}
+nav a:hover { color: #fff }
+
+/* Hero Section */
+#hero {
+  height: 100vh;
+  background: url('images/car-hero-bg.jpg') center/cover no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 20px;
+}
+#hero h1 { font-size: 3rem; margin: 0; }
+#hero p { font-size: 1.2rem; margin-top: 10px; max-width: 600px; }
+.cta-button {
+  margin-top: 20px;
+  padding: 12px 30px;
+  background: linear-gradient(90deg, #444, #888);
+  border: none;
+  color: #fff;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+.cta-button:hover {
+  background: linear-gradient(90deg, #666, #aaa);
+}
+
+/* Sections */
+section {
+  padding: 80px 30px;
+}
+section:nth-child(even) { background: #111; }
+h2 {
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+}
+
+/* Services */
+.services-list {
+  list-style: none;
+  padding: 0;
+}
+.services-list li {
+  background: #111;
+  margin: 10px 0;
+  padding: 15px;
+  border-left: 4px solid #888;
+}
+
+/* Portfolio Gallery */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+.gallery img {
+  width: calc(33% - 10px);
+  max-width: 300px;
+  border: 2px solid #222;
+}
+
+/* Booking Form */
+form {
+  max-width: 500px;
+  margin: 0 auto;
+  background: #111;
+  padding: 20px;
+  border: 1px solid #222;
+}
+form input, form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  background: #222;
+  border: 1px solid #333;
+  color: #eee;
+  font-size: 1rem;
+}
+form textarea { resize: vertical; }
+
+/* Footer */
+footer {
+  padding: 20px;
+  text-align: center;
+  background: #111;
+  font-size: 0.9rem;
+}
